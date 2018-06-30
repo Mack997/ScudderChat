@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context="com.example.mayankagarwal.thechatapp.ChatActivity">
+
+    <include
+        android:id="@+id/chat_bar_layout"
+        layout="@layout/app_bar_layout"
+       />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_lists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/message_layout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chat_bar_layout">
+
+        </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/message_layout">
+
+        <EditText
+            android:id="@+id/message_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/message_box"
+            android:hint="@string/type_your_message_here"
+            android:inputType="textCapWords|textCapSentences"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/chat_send_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/message_layout"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/message_layout"
+        android:background="@drawable/send_btn"
+        android:contentDescription="@string/todo" />
+
+
+</RelativeLayout>

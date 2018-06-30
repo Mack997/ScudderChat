@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1DE9B6</color>
+    <color name="colorPrimaryDark">#00BFA5</color>
+    <color name="colorAccent">#69F0AE</color>
+
+
+    <color name="Blue">#0A65B6</color>
+    <color name="Grey">#dddddd</color>
+    <color name="lightGrey">#F5F5F5</color>
+    <color name="darkGrey">#607D8B</color>
+    <color name="white">#ffffff</color>
+    <color name="textTabLight">#000000</color>
+    <color name="textTabBright">#ffffff</color>
+    <color name="button">#6281EC</color>
+    <color name="purple">#D961ED</color>
+</resources>
